@@ -25,17 +25,17 @@ class UsersController < ApplicationController
   end
 
   # PUT /users/{username}
-  def update
-    unless @user.update(user_params)
-      render json: { errors: @user.errors.full_messages },
-             status: :unprocessable_entity
-    end
-  end
+  # def update
+  #   unless @user.update(user_params)
+  #     render json: { errors: @user.errors.full_messages },
+  #            status: :unprocessable_entity
+  #   end
+  # end
 
   # DELETE /users/{username}
-  def destroy
-    @user.destroy
-  end
+  # def destroy
+  #   @user.destroy
+  # end
 
   private
 
